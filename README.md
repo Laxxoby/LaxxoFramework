@@ -22,7 +22,8 @@ Puedes instalar LaxxoFramework de diferentes maneras:
 Agrega el siguiente enlace a tu archivo HTML:
 
 ```html
-<link rel="stylesheet" href="https://cdn.example.com/laxxoframework/0.1.0/laxxoframework.min.css">
+<link rel="stylesheet" href="https://cdn.example.com/laxxoframework/0.1.0/laxxoframework.min.css"> 
+<!-- Aun no :c -->
 ```
 
 ### Via npm
@@ -34,7 +35,7 @@ npm install laxxoframework
 Luego importa el CSS en tu proyecto:
 
 ```javascript
-import 'neoncssframework/dist/laxxoframework.min.css';
+import 'laxxoframework/dist/laxxoframework.min.css';
 ```
 
 ### Descarga Manual
@@ -42,7 +43,7 @@ import 'neoncssframework/dist/laxxoframework.min.css';
 Descarga y enlaza el archivo CSS en tu proyecto:
 
 ```html
-<link rel="stylesheet" href="ruta/a/neoncssframework.min.css">
+<link rel="stylesheet" href="https://laxxoby.github.io/LaxxoFramework/dist/css/laxxoframework.min.css">
 ```
 
 ## Uso Básico
@@ -56,7 +57,7 @@ Aquí hay un ejemplo básico de cómo usar LaxxoFramework en tu HTML:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Proyecto Futurista</title>
-    <link rel="stylesheet" href="https://cdn.example.com/neoncssframework/0.1.0/neoncssframework.min.css">
+    <link rel="stylesheet" href="https://laxxoby.github.io/LaxxoFramework/dist/css/laxxoframework.min.css">
 </head>
 <body>
     <header class="header">
@@ -66,7 +67,7 @@ Aquí hay un ejemplo básico de cómo usar LaxxoFramework en tu HTML:
         <p>Comienza a construir tu sitio web con un toque futurista y vibrante.</p>
     </main>
     <footer class="footer">
-        <p>© 2024 NeonCSSFramework. Todos los derechos reservados.</p>
+        <p>© 2024 LaxxoFramework. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
