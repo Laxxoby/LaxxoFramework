@@ -4,7 +4,8 @@
   "description": "framework CSS innovador y vibrante inspirado en colores púrpuras, sombras, luces y efectos de neón.",
   "main": "dist/laxxoframework.min.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "postcss src/main.css -o dist/css/laxxoframework.min.css"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,12 @@
   "bugs": {
     "url": "https://github.com/Laxxoby/LaxxoFramework/issues"
   },
-  "homepage": "https://github.com/Laxxoby/LaxxoFramework#readme"
+  "homepage": "https://github.com/Laxxoby/LaxxoFramework#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "cssnano": "^7.0.4",
+    "postcss": "^8.4.40",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0"
+  }
 }
