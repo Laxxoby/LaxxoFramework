@@ -13,46 +13,28 @@ LaxxoFramework es un framework CSS innovador y vibrante, inspirado en los colore
 - **Fácil de personalizar**: Personaliza fácilmente los estilos con variables CSS.
 - **Documentación completa**: Guía completa para ayudarte a comenzar y utilizar todas las características del framework.
 
-Claro, aquí tienes un ejemplo de un README adaptado para un framework CSS en fase inicial con las características que mencionas:
-
-```markdown
-# NeonCSSFramework
-
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)
-
-NeonCSSFramework es un framework CSS innovador y vibrante, inspirado en los colores púrpuras, sombras, luces y efectos de neón. Diseñado para proyectos modernos y futuristas, este framework ofrece una base sólida para crear interfaces web impactantes y responsivas.
-
-## Características
-
-- **Diseño vibrante**: Colores púrpuras, efectos de neón y sombras llamativas.
-- **Modularidad**: Usa solo los componentes que necesitas para mantener tu proyecto ligero.
-- **Responsivo**: Diseño adaptable a todos los tamaños de pantalla.
-- **Personalizable**: Personaliza fácilmente los estilos con variables CSS.
-- **Documentación completa**: Guía completa para ayudarte a comenzar y utilizar todas las características del framework.
-
 ## Instalación
 
-Puedes instalar NeonCSSFramework de diferentes maneras:
+Puedes instalar LaxxoFramework de diferentes maneras:
 
 ### Via CDN
 
 Agrega el siguiente enlace a tu archivo HTML:
 
 ```html
-<link rel="stylesheet" href="https://cdn.example.com/neoncssframework/0.1.0/neoncssframework.min.css">
+<link rel="stylesheet" href="https://cdn.example.com/laxxoframework/0.1.0/laxxoframework.min.css">
 ```
 
 ### Via npm
 
 ```bash
-npm install neoncssframework
+npm install laxxoframework
 ```
 
 Luego importa el CSS en tu proyecto:
 
 ```javascript
-import 'neoncssframework/dist/neoncssframework.min.css';
+import 'neoncssframework/dist/laxxoframework.min.css';
 ```
 
 ### Descarga Manual
@@ -65,7 +47,7 @@ Descarga y enlaza el archivo CSS en tu proyecto:
 
 ## Uso Básico
 
-Aquí hay un ejemplo básico de cómo usar NeonCSSFramework en tu HTML:
+Aquí hay un ejemplo básico de cómo usar LaxxoFramework en tu HTML:
 
 ```html
 <!DOCTYPE html>
@@ -92,7 +74,7 @@ Aquí hay un ejemplo básico de cómo usar NeonCSSFramework en tu HTML:
 
 ## Documentación
 
-Para más detalles sobre cómo utilizar NeonCSSFramework, visita la [documentación oficial](https://example.com/neoncssframework/docs).
+Para más detalles sobre cómo utilizar LaxxoFramework, visita la [documentación oficial](https://example.com/laxxoframework/docs).
 
 ## Contribuciones
 
@@ -110,5 +92,5 @@ Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo [LICENS
 
 ---
 
-¡Gracias por usar NeonCSSFramework! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto.
+¡Gracias por usar LaxxoFramework! Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto.
 ```
