@@ -23,7 +23,7 @@
   "bugs": {
     "url": "https://github.com/Laxxoby/LaxxoFramework/issues"
   },
-  "homepage": "https://github.com/Laxxoby/LaxxoFramework#readme",
+  "homepage": "https://laxxoby.github.io/LaxxoFramework/",
   "devDependencies": {
     "autoprefixer": "^10.4.19",
     "cssnano": "^7.0.4",
