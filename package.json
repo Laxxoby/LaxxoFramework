@@ -1,0 +1,26 @@
+{
+  "name": "laxxoframework",
+  "version": "0.1.0",
+  "description": "framework CSS innovador y vibrante inspirado en colores púrpuras, sombras, luces y efectos de neón.",
+  "main": "dist/laxxoframework.min.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Laxxoby/LaxxoFramework.git"
+  },
+  "keywords": [
+    "css",
+    "framework",
+    "neon",
+    "responsive",
+    "modular"
+  ],
+  "author": "Laxxoby",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Laxxoby/LaxxoFramework/issues"
+  },
+  "homepage": "https://github.com/Laxxoby/LaxxoFramework#readme"
+}
