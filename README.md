@@ -29,7 +29,7 @@ Agrega el siguiente enlace a tu archivo HTML:
 ### Via npm
 
 ```bash
-npm install laxxoframework
+npm i laxxoframework
 ```
 
 Luego importa el CSS en tu proyecto:
