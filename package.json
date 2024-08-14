@@ -1,12 +1,13 @@
 {
   "name": "laxxoframework",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "framework CSS innovador y vibrante inspirado en colores púrpuras, sombras, luces y efectos de neón.",
-  "main": "dist/laxxoframework.min.css",
+  "main": "index.html",
+  "style": "dist/css/laxxoframework.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:min": "postcss src/main.css -o dist/css/laxxoframework.min.css --config postcss.min.config.js",
-    "build:css": "postcss src/main.css -o dist/css/laxxoframework.css --config postcss.config.js",
+    "build:css": "postcss src/main.css -o dist/css/laxxoframework.css",
+    "build:min": "MINIFY=true postcss src/main.css -o dist/css/laxxoframework.min.css",
     "build": "npm run build:css && npm run build:min"
   },
   "repository": {

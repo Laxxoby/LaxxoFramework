@@ -1,7 +1,7 @@
 # LaxxoFramework
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)
+![Version](https://img.shields.io/badge/version-0.1.3-brightgreen.svg)
 
 LaxxoFramework es un framework CSS innovador y vibrante, inspirado en los colores púrpuras, sombras, luces y efectos de neón. Diseñado para proyectos modernos y futuristas, este framework ofrece una base sólida para crear interfaces web impactantes y responsivas.
 
@@ -22,7 +22,7 @@ Puedes instalar LaxxoFramework de diferentes maneras:
 Agrega el siguiente enlace a tu archivo HTML:
 
 ```html
-<link rel="stylesheet" href="https://cdn.example.com/laxxoframework/0.1.0/laxxoframework.min.css"> 
+<link rel="stylesheet" href="https://cdn.example.com/laxxoframework/0.1.3/laxxoframework.min.css"> 
 <!-- Aun no :c -->
 ```
 
