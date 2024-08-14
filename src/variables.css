@@ -21,6 +21,8 @@
     --lx-secondary-rgb: 62, 50, 95;
     --lx-shadow-color: var(--lx-secondary-color);
     --lx-y-text-shadow: -3px;
+    --lx-alert-primary-color: var(--lx-nav-link-color);
+    --lx-btn-submit-color: #361C7F;
 }
 
 [theme-mode=dark] {
@@ -31,7 +33,8 @@
     --lx-secondary-color: #121113;
     --lx-card-bg: #361C7F;
     --lx-shadow-color: var(--lx-secondary-color);
-
+    --lx-alert-primary-color: var(--lx-body-bg);
+    --lx-btn-submit-color: #c686fe;
 }
 
 

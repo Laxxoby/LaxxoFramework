@@ -205,14 +205,20 @@ button {
 }
 
 [neon="on"] .btn {
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+[neon="on"] .btn:hover{
     /* Sombra tipo neon */
-    box-shadow: 0px 0px 10px 2px white, 0px 0px 2px 1px white, 0px 0px 60px 1px rgba(255, 255, 255, 0.409);
+    text-shadow: 0px var(--lx-y-text-shadow) 2px var(--lx-shadow-color);
+    box-shadow: 0px 0px 10px 2px var(--lx-shadow-color), 0px 0px 2px 1px var(--lx-shadow-color), 0px 0px 60px 1px rgba(255, 255, 255, 0.409);
 }
 
 .btn:hover,
 .btn:focus {
     /* color: var(--lx-btn-hover-color);
     background-color: var(--lx-btn-hover-bg); */
+
     border-color: var(--lx-btn-hover-border-color);
     box-shadow: 0 5px 5px 0 var(--lx-btn-hover-shadow-color);
 }
@@ -225,8 +231,8 @@ button {
     --lx-btn-hover-color: var(--lx-nav-link-color);
     --lx-btn-bg: #6541a8;
     --lx-btn-hover-bg: transparent;
-    --lx-btn-shadow-color: var(--lx-shadow-color);
-    --lx-btn-border-color: var(--lx-shadow-color);
+    --lx-btn-shadow-color: var(--lx-secondary-color);
+    /* --lx-btn-border-color: var(--lx-shadow-color); */
     --lx-btn-hover-shadow-color: var(--lx-shadow-color);
     --lx-btn-hover-border-color: #8d67d4;
 }
@@ -272,8 +278,8 @@ button {
 }
 
 .btn-submit {
-    --lx-btn-border-color: #361C7F;
-    --lx-btn-color: #361C7F;
+    --lx-btn-border-color: var(--lx-btn-submit-color);
+    --lx-btn-color: var(--lx-btn-submit-color);
 }
 
 .btn.disabled {
@@ -337,7 +343,7 @@ button:not(:disabled),
 .alert-primary {
     --lx-btn-border-color: #6a4eb8;
     background-color: #ae9ae6;
-    color: var(--lx-nav-link-color);
+    color: var(--lx-alert-primary-color);
 
 }
 

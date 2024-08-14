@@ -1,4 +1,4 @@
-html{
+html {
     padding: 5vw;
 }
 
@@ -16,4 +16,12 @@ html{
 
 .theme-toggle i {
     transition: transform 0.3s;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
