@@ -1,0 +1,41 @@
+/* ------ Variables ------ */
+:root,
+[theme-mode=light] {
+    --lx-body-bg: rgb(244, 240, 233);
+    --lx-body-font-family: 'Montserrat Alternates', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --lx-body-font-size: 1rem;
+    --lx-body-font-weight: 400;
+    --lx-body-line-height: 1.5;
+    --lx-border-width: 1px;
+    --lx-body-color: rgb(12, 12, 12);
+    --lx-nav-link-font-size: 1.3rem;
+    --lx-nav-link-font-weight: 500;
+    --lx-nav-link-color: rgb(71, 9, 147);
+    --lx-secondary-color: #8d67d4;
+    --lx-btn-bg: transparent;
+    --lx-btn-color: #dfdce3;
+    --lx-border-radius: 0.5rem;
+    --lx-card-shadow-color: rgba(12, 2, 27, 0.7);
+    --lx-card-bg: transparent;
+    --lx-border-color: #6a4eb8;
+    --lx-secondary-rgb: 62, 50, 95;
+    --lx-shadow-color: var(--lx-secondary-color);
+    --lx-y-text-shadow: -3px;
+}
+
+[theme-mode=dark] {
+    color-scheme: dark;
+    --lx-body-bg: #280B4E;
+    --lx-body-color: #dfdce3;
+    --lx-nav-link-color: rgb(255, 195, 252);
+    --lx-secondary-color: #121113;
+    --lx-card-bg: #361C7F;
+    --lx-shadow-color: var(--lx-secondary-color);
+
+}
+
+
+[neon=on] {
+    --lx-shadow-color: white;
+    --lx-y-text-shadow: -1px;
+}
