@@ -1,6 +1,6 @@
 {
   "name": "laxxoframework",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "framework CSS innovador y vibrante inspirado en colores púrpuras, sombras, luces y efectos de neón.",
   "main": "dist/laxxoframework.min.css",
   "scripts": {
