@@ -23,7 +23,8 @@
     --lx-y-text-shadow: -3px;
     --lx-alert-primary-color: var(--lx-nav-link-color);
     --lx-btn-submit-color: #361C7F;
-}
+    --lx-shadow-color-1: var(--lx-secondary-color);
+}   
 
 [theme-mode=dark] {
     color-scheme: dark;
@@ -35,10 +36,14 @@
     --lx-shadow-color: var(--lx-secondary-color);
     --lx-alert-primary-color: var(--lx-body-bg);
     --lx-btn-submit-color: #c686fe;
+    --lx-shadow-color-1: var(--lx-secondary-color);
 }
 
 
 [neon=on] {
     --lx-shadow-color: white;
     --lx-y-text-shadow: -1px;
+    --lx-shadow-color-1: rgba(255, 255, 255, 0.806);
+    --lx-shadow-color-2: rgba(255, 255, 255, 0.432);
+    --lx-card-shadow-color: var(--lx-shadow-color);
 }

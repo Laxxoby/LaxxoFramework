@@ -18,6 +18,9 @@ html {
     transition: transform 0.3s;
 }
 
+hr{
+    margin-block: 2.5rem;
+}
 
 .neon-toggle {
     position: fixed;

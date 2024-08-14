@@ -39,6 +39,14 @@ hr {
     opacity: 0.25;
 }
 
+[neon="on"] hr{
+    /* color: white; */
+    opacity: 1;
+    border-top: 2px solid;
+    box-shadow: 1px 1px 10px 1px var(--lx-shadow-color), 
+                1px 1px 20px 4px rgba(255, 255, 255, 0.301);
+}
+
 /* ------ Fuentes ------ */
 
 h6,
@@ -90,6 +98,21 @@ h6,
     font-size: 1rem;
 }
 
+[neon="on"] h1,
+[neon="on"] .h1,
+[neon="on"] h2,
+[neon="on"] .h2,
+[neon="on"] h3,
+[neon="on"] .h3,
+[neon="on"] h4,
+[neon="on"] .h4,
+[neon="on"] h5,
+[neon="on"] .h5,
+[neon="on"] h6,
+[neon="on"] .h6 {
+    text-shadow: 0px var(--lx-y-text-shadow) 10px rgba(255, 255, 255, 0.384);
+}
+
 p {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -112,7 +135,7 @@ nav,
     --lx-nav-link-padding-x: 1rem;
     --lx-nav-link-padding-y: 0.5rem;
     --lx-nav-link-disabled-color: var(--lx-secondary-color);
-    --lx-nav-link-shadow-color: var(--lx-shadow-color);
+    --lx-nav-link-shadow-color: var(--lx-shadow-color-1);
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -138,11 +161,11 @@ nav,
 }
 
 .nav-link:hover {
-    text-shadow: 0px var(--lx-y-text-shadow) 2px var(--lx-nav-link-shadow-color);
+    text-shadow: 0px var(--lx-y-text-shadow) 2px var(--lx-shadow-color);
     border-bottom: 1px solid var(--lx-nav-link-shadow-color);
     box-shadow: 0 10px 5px var(--lx-nav-link-shadow-color);
     /* box-shadow: 0px 10px 10px 1px white, 0px 10px 30px 4px white; */
-    
+
 }
 
 .nav-link.active,
@@ -208,7 +231,8 @@ button {
     transition: box-shadow 0.1s ease-in-out;
 }
 
-[neon="on"] .btn:hover{
+[neon="on"] .btn:hover,
+[neon="on"] .btn:focus {
     /* Sombra tipo neon */
     text-shadow: 0px var(--lx-y-text-shadow) 2px var(--lx-shadow-color);
     box-shadow: 0px 0px 10px 2px var(--lx-shadow-color), 0px 0px 2px 1px var(--lx-shadow-color), 0px 0px 60px 1px rgba(255, 255, 255, 0.409);
@@ -310,6 +334,12 @@ button:not(:disabled),
     box-shadow: 0 10px 30px -15px var(--lx-card-shadow-color);
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
+}
+
+[neon="on"] .card{
+    border: 1px solid var(--lx-shadow-color);
+    box-shadow: 1px 1px 4px 1px var(--lx-shadow-color-2),
+                1px 1px 20px 1px var(--lx-shadow-color-2);
 }
 
 .card-img-top {
