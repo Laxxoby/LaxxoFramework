@@ -1,5 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* ------ Variables ------ */
+
+/* ------ Variables ------ */
+
+:root,
+[theme-mode=light] {
+    --lx-body-bg: rgb(244, 240, 233);
+    --lx-body-font-family: 'Montserrat Alternates', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --lx-body-font-size: 1rem;
+    --lx-body-font-weight: 400;
+    --lx-body-line-height: 1.5;
+    --lx-border-width: 1px;
+    --lx-body-color: rgb(12, 12, 12);
+    --lx-nav-link-font-size: 1.3rem;
+    --lx-nav-link-font-weight: 500;
+    --lx-nav-link-color: rgb(71, 9, 147);
+    --lx-secondary-color: #8d67d4;
+    --lx-btn-bg: transparent;
+    --lx-btn-color: #dfdce3;
+    --lx-border-radius: 0.5rem;
+    --lx-card-shadow-color: rgba(12, 2, 27, 0.7);
+    --lx-card-bg: transparent;
+    --lx-border-color: #6a4eb8;
+    --lx-secondary-rgb: 62, 50, 95;
+    --lx-shadow-color: var(--lx-secondary-color);
+    --lx-y-text-shadow: -3px;
+    --lx-alert-primary-color: var(--lx-nav-link-color);
+    --lx-btn-submit-color: #361C7F;
+    --lx-shadow-color-1: var(--lx-secondary-color);
+}
+
+[theme-mode=dark] {
+    color-scheme: dark;
+    --lx-body-bg: #280B4E;
+    --lx-body-color: #dfdce3;
+    --lx-nav-link-color: rgb(255, 195, 252);
+    --lx-secondary-color: #121113;
+    --lx-card-bg: #361C7F;
+    --lx-shadow-color: var(--lx-secondary-color);
+    --lx-alert-primary-color: var(--lx-body-bg);
+    --lx-btn-submit-color: #c686fe;
+    --lx-shadow-color-1: var(--lx-secondary-color);
+}
+
+[neon=on] {
+    --lx-shadow-color: white;
+    --lx-y-text-shadow: -1px;
+    --lx-shadow-color-1: rgba(255, 255, 255, 0.806);
+    --lx-shadow-color-2: rgba(255, 255, 255, 0.432);
+    --lx-card-shadow-color: var(--lx-shadow-color);
+}
+
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 html {
@@ -194,40 +246,6 @@ template {
     box-sizing: border-box;
 }
 
-/* ------ Variables ------ */
-
-:root,
-[theme-mode=light] {
-    --lx-body-bg: rgb(244, 240, 233);
-    --lx-body-font-family: 'Montserrat Alternates', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    --lx-body-font-size: 1rem;
-    --lx-body-font-weight: 400;
-    --lx-body-line-height: 1.5;
-    --lx-border-width: 1px;
-    --lx-body-color: rgb(12, 12, 12);
-    --lx-nav-link-font-size: 1.3rem;
-    --lx-nav-link-font-weight: 500;
-    --lx-nav-link-color: rgb(71, 9, 147);
-    --lx-secondary-color: #8d67d4;
-    --lx-btn-bg: transparent;
-    --lx-btn-color: #dfdce3;
-    --lx-border-radius: 0.5rem;
-    --lx-card-shadow-color: rgba(12, 2, 27, 0.7);
-    --lx-card-bg: transparent;
-    --lx-border-color: #6a4eb8;
-    --lx-secondary-rgb: 62, 50, 95;
-}
-
-[theme-mode=dark] {
-    color-scheme: dark;
-    --lx-body-bg: #280B4E;
-    --lx-body-color: #dfdce3;
-    --lx-nav-link-color: rgb(255, 195, 252);
-    --lx-secondary-color: #121113;
-    --lx-card-bg: #361C7F;
-
-}
-
 @media (prefers-reduced-motion: no-preference) {
     :root {
         scroll-behavior: smooth;
@@ -249,6 +267,14 @@ hr {
     border: 0;
     border-top: var(--lx-border-width) solid;
     opacity: 0.25;
+}
+
+[neon="on"] hr{
+    /* color: white; */
+    opacity: 1;
+    border-top: 2px solid;
+    box-shadow: 1px 1px 10px 1px var(--lx-shadow-color), 
+                1px 1px 20px 4px rgba(255, 255, 255, 0.301);
 }
 
 /* ------ Fuentes ------ */
@@ -302,6 +328,21 @@ h6,
     font-size: 1rem;
 }
 
+[neon="on"] h1,
+[neon="on"] .h1,
+[neon="on"] h2,
+[neon="on"] .h2,
+[neon="on"] h3,
+[neon="on"] .h3,
+[neon="on"] h4,
+[neon="on"] .h4,
+[neon="on"] h5,
+[neon="on"] .h5,
+[neon="on"] h6,
+[neon="on"] .h6 {
+    text-shadow: 0px var(--lx-y-text-shadow) 10px rgba(255, 255, 255, 0.384);
+}
+
 p {
     margin-top: 0;
     margin-bottom: 1rem;
@@ -325,7 +366,7 @@ nav,
     --lx-nav-link-padding-x: 1rem;
     --lx-nav-link-padding-y: 0.5rem;
     --lx-nav-link-disabled-color: var(--lx-secondary-color);
-    --lx-nav-link-shadow-color: var(--lx-secondary-color);
+    --lx-nav-link-shadow-color: var(--lx-shadow-color-1);
     display: flex;
     flex-wrap: wrap;
     padding-left: 0;
@@ -351,14 +392,16 @@ nav,
 }
 
 .nav-link:hover {
-    text-shadow: 0px -3px 2px var(--lx-nav-link-shadow-color);
+    text-shadow: 0px var(--lx-y-text-shadow) 2px var(--lx-shadow-color);
     border-bottom: 1px solid var(--lx-nav-link-shadow-color);
     box-shadow: 0 10px 5px var(--lx-nav-link-shadow-color);
+    /* box-shadow: 0px 10px 10px 1px white, 0px 10px 30px 4px white; */
+
 }
 
 .nav-link.active,
 .nav-link:active {
-    text-shadow: 0px -3px 2px var(--lx-nav-link-shadow-color);
+    text-shadow: 0px var(--lx-y-text-shadow) 2px var(--lx-nav-link-shadow-color);
     border-bottom: 1px solid var(--lx-nav-link-shadow-color);
     box-shadow: 0px 10px 5px var(--lx-nav-link-shadow-color);
 }
@@ -417,10 +460,22 @@ button {
         box-shadow 0.4s ease-in-out;
 }
 
+[neon="on"] .btn {
+    transition: box-shadow 0.1s ease-in-out;
+}
+
+[neon="on"] .btn:hover,
+[neon="on"] .btn:focus {
+    /* Sombra tipo neon */
+    text-shadow: 0px var(--lx-y-text-shadow) 2px var(--lx-shadow-color);
+    box-shadow: 0px 0px 10px 2px var(--lx-shadow-color), 0px 0px 2px 1px var(--lx-shadow-color), 0px 0px 60px 1px rgba(255, 255, 255, 0.409);
+}
+
 .btn:hover,
 .btn:focus {
     /* color: var(--lx-btn-hover-color);
     background-color: var(--lx-btn-hover-bg); */
+
     border-color: var(--lx-btn-hover-border-color);
     box-shadow: 0 5px 5px 0 var(--lx-btn-hover-shadow-color);
 }
@@ -433,7 +488,8 @@ button {
     --lx-btn-bg: #6541a8;
     --lx-btn-hover-bg: transparent;
     --lx-btn-shadow-color: var(--lx-secondary-color);
-    --lx-btn-hover-shadow-color: var(--lx-secondary-color);
+    /* --lx-btn-border-color: var(--lx-shadow-color); */
+    --lx-btn-hover-shadow-color: var(--lx-shadow-color);
     --lx-btn-hover-border-color: #8d67d4;
 }
 
@@ -478,8 +534,8 @@ button {
 }
 
 .btn-submit {
-    --lx-btn-border-color: #361C7F;
-    --lx-btn-color: #361C7F;
+    --lx-btn-border-color: var(--lx-btn-submit-color);
+    --lx-btn-color: var(--lx-btn-submit-color);
 }
 
 .btn.disabled {
@@ -510,6 +566,12 @@ button:not(:disabled),
     box-shadow: 0 10px 30px -15px var(--lx-card-shadow-color);
     border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
+}
+
+[neon="on"] .card{
+    border: 1px solid var(--lx-shadow-color);
+    box-shadow: 1px 1px 4px 1px var(--lx-shadow-color-2),
+                1px 1px 20px 1px var(--lx-shadow-color-2);
 }
 
 .card-img-top {
@@ -544,7 +606,7 @@ button:not(:disabled),
 .alert-primary {
     --lx-btn-border-color: #6a4eb8;
     background-color: #ae9ae6;
-    color: var(--lx-nav-link-color);
+    color: var(--lx-alert-primary-color);
 
 }
 
